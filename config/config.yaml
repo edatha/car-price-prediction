@@ -1,0 +1,29 @@
+# Data paths
+DATA_PATH: "artifacts/car.csv"
+NEW_DATA_PATH: "artifacts/new_car.csv"
+MODEL_PATH: "artifacts/best_model.pkl"
+METRICS_PATH: "artifacts/metrics.json"
+
+# Model parameters
+RANDOM_STATE: 42
+TEST_SIZE: 0.2
+TARGET_COLUMN: "Price"
+NEW_COLUMN: "car_age"
+DROP_COLUMN_1: "year"
+DROP_COLUMNS:
+- "year"
+- "Unnamed: 0"
+
+CATEGORICAL_COLS:
+- "company"
+- "fuel_type"
+- "name"
+
+NUMERICAL_COL: "kms_driven"
+
+FEATURE_IMPORTANCE:
+- "name"
+- "kms_driven"
+- "fuel_type"
+- "company"
+- "car_age"
