@@ -85,3 +85,12 @@ with col2:
         new_image = image.resize((600, 350))
         st.image(new_image, caption="RAG Using Haystack")
         st.markdown('<p style="text-align: center;"><a href="https://github.com/edatha/rag-using-haystack" style="color:white; text-decoration:none;">Click here to visit the project</a></p>', unsafe_allow_html=True)
+
+col1, col2 = st.columns(2)
+with col1: 
+    is_image = 'img/beach-litter.jpg'
+    if is_image is not None:
+        image = Image.open(is_image)
+        new_image = image.resize((600, 350))
+        st.image(new_image, caption="Beach Litter Segmentation using YOLOv8")
+        st.markdown('<p style="text-align: center;"><a href="https://github.com/edatha/capstone-dibimbing" style="color:white; text-decoration:none;">Click here to visit the project</a></p>', unsafe_allow_html=True)
